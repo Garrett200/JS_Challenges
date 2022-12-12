@@ -321,3 +321,24 @@
 //}
 
 //console.log(convertToBoolean(['', NaN, 500, null, false, 0]));
+
+
+// ~~~~~~~~~~~~ ADVANCED CHALLENGES ~~~~~~~~~~
+
+// Q1. Show rating
+
+function showRating(stars) {
+    let ratings = "";
+    for (let i = 0; i < Math.floor(stars); ++i) { // .5 stars forces the loop to run a 5th time, math.floor rounds it down to 4
+        ratings += "*";
+        if (i !== Math.floor(stars) - 1) { // Needs rounding down here as well
+            ratings += " ";
+        }
+    }
+    if (!Number.isInteger(stars)) {
+        ratings += " .";
+    }
+    return ratings;
+}
+
+console.log(showRating(4.5));
