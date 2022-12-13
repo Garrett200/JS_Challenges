@@ -327,18 +327,60 @@
 
 // Q1. Show rating
 
-function showRating(stars) {
-    let ratings = "";
-    for (let i = 0; i < Math.floor(stars); ++i) { // .5 stars forces the loop to run a 5th time, math.floor rounds it down to 4
-        ratings += "*";
-        if (i !== Math.floor(stars) - 1) { // Needs rounding down here as well
-            ratings += " ";
-        }
-    }
-    if (!Number.isInteger(stars)) {
-        ratings += " .";
-    }
-    return ratings;
+//function showRating(stars) {
+//    let ratings = "";
+//    for (let i = 0; i < Math.floor(stars); ++i) { // .5 stars forces the loop to run a 5th time, math.floor rounds it down to 4
+//        ratings += "*";
+//        if (i !== Math.floor(stars) - 1) { // if i (0) is not equal to stars (rounded down to (4)) -1, put a space.
+//            ratings += " ";                // The - 1 keeps the loop from adding a space after the total stars
+//        }
+//    }
+//    if (!Number.isInteger(stars)) {  // !Number means is not an integer
+//        ratings += " .";
+//    }
+//    return ratings;
+//}
+
+//console.log(showRating(4.5));
+
+// Q2. Sort by lowest to highest price
+
+function sortLowToHigh(arr) {
+    arr.sort();
+    return arr;
 }
 
-console.log(showRating(4.5));
+console.log(sortLowToHigh([3, 2, 1, 0]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
