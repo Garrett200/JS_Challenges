@@ -346,11 +346,11 @@
 // Q2. Sort by lowest to highest price
 
 function sortLowToHigh(arr) {
-    arr.sort();
-    return arr;
+    return arr.sort((a, b) => a - b);
+
 }
 
-console.log(sortLowToHigh([3, 2, 1, 0]));
+console.log(sortLowToHigh([30, 10, 2, 10, 0]));
 
 
 
