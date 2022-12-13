@@ -353,17 +353,36 @@
 
 // Q3. Sort by highest to lowest price
 
-function sortHighToLow(numbers) {
-    return numbers.sort((a, b) => b.price - a.price)
-}
+//function sortHighToLow(numbers) {
+//    return numbers.sort((a, b) => b.price - a.price)
+//}
 
-console.log(
-    sortHighToLow([
-    { id: 1, price: 50 },
-    { id: 2, price: 30 },
-    { id: 3, price: 60 },
-    { id: 4, price: 10 },
-]))
+//console.log(
+//    sortHighToLow([
+//    { id: 1, price: 50 },
+//    { id: 2, price: 30 },
+//    { id: 3, price: 60 },
+//    { id: 4, price: 10 },
+//]))
+
+// Q4. Promises
+
+// Rewatched Promises video ~~
+
+// Q5. Find all the posts by a single user
+
+//async function postsByUser(userId) {
+//    const response = await fetch("https://jsonplaceholder.typicode.com/posts"); // grab the info from the link
+//    const data = await response.json()  // Convert the info to json to make it readable
+//    const posts = data.filter(elem => elem.userId === userId) // If the userId is === to the parameter we set, it keeps it. otherwise its thrown out
+//    console.log(posts)
+//}
+
+//postsByUser(1);
+
+// Q6
+
+
 
 
 
