@@ -345,14 +345,25 @@
 
 // Q2. Sort by lowest to highest price
 
-function sortLowToHigh(arr) {
-    return arr.sort((a, b) => a - b);
+//function sortLowToHigh(arr) {
+//    return arr.sort((a, b) => a - b);
+//}
 
+//console.log(sortLowToHigh([30, 10, 2, 10, 0]));
+
+// Q3. Sort by highest to lowest price
+
+function sortHighToLow(numbers) {
+    return numbers.sort((a, b) => b.price - a.price)
 }
 
-console.log(sortLowToHigh([30, 10, 2, 10, 0]));
-
-
+console.log(
+    sortHighToLow([
+    { id: 1, price: 50 },
+    { id: 2, price: 30 },
+    { id: 3, price: 60 },
+    { id: 4, price: 10 },
+]))
 
 
 
